@@ -7,17 +7,16 @@
 软件架构说明
 
 
-#### 安装教程
+#### 需要注意的C文件
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  ILI93xx.c(触摸屏代码)
+2.  ov2640.c(ov2640和SCCB通信代码)
+3.  dcmi.c(在USER CODE BEGIN Prototypes区域有DCMI传输相关函数)
+4.  main.c
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  根据CUBEMX的引脚说明进行期间连接
 
 #### 参与贡献
 
