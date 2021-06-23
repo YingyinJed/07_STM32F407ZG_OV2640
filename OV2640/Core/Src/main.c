@@ -132,7 +132,7 @@ int main(void)
     DCMI_DMA_Init((uint32_t)&TFT_LCD->LCD_RAM,0,1,DMA_MDATAALIGN_HALFWORD,DMA_MINC_DISABLE);//DCMI DMAÅäÖÃ,MCUÆÁ,ÊúÆÁ
     DCMI_Start();             //Æô¶¯´«Êä 
     HAL_DCMI_Start_DMA(&hdcmi,DCMI_MODE_CONTINUOUS,(uint32_t)&TFT_LCD->LCD_RAM,1);        //DCMIÆô¶¯DMAÍ¨µÀ
-    HAL_DMA_Start(&hdma_dcmi_main,(uint32_t)&DCMI->DR,(uint32_t)&TFT_LCD->LCD_RAM,1);
+//    HAL_DMA_Start(&hdma_dcmi_main,(uint32_t)&DCMI->DR,(uint32_t)&TFT_LCD->LCD_RAM,1);//DCMI-->DMA-->UART
     /* USER CODE END 2 */
 
   /* Infinite loop */

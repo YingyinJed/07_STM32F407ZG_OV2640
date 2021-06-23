@@ -1,0 +1,37 @@
+
+-PA8开启MCO1   提供8M时钟
+
+-DCMI-Slave 8 bits External
+ Vertical synchronization-High
+
+-DMA
+ Mode-Circular
+ Priority-High
+ use fifo
+
+-GPIO 
+ PA4,PA6-Pull up
+
+ PG9  - OUT - Pull up - DCMI_PWDN
+ PG15 - OUT - Pull up - DCMI_RESET
+
+-SCCB
+ PD6  - OUT - Pull up - DCMI_SCL
+ PD7  - OUT - Pull up - DCMI_SDA
+---------------------------------------------------
+-FSMC的时序不能乱写，否则读出的数据不对的。
+
+-摄像头传输的数据是从上到下，从左到右。这样会使LCD的X与Y坐标倒置。
+
+-读取LCD的颜色值不能直接去找LCD基地址，再取出地址对应的数据。不能
+ 需要些寄存器一个命令：0X2E00。再去接收他发过来的数据。第一次接收到的数据是无效数据。
+
+-单片机发上位机的RGB数据先发低8位，再发高8位。
+
+-山外调试助手摄像接收有协议：0X01 0XFE [数据][...] 0XFE 0X01
+
+-波特率256000，一张照片传输需要等8秒。
+
+-当LCD屏开始显示图像后，按下UP按键，开始照相，将照片传输至上位机
+
+-上位机软件下载山外多功能调试助手，中的智能车助手中的摄像机板块

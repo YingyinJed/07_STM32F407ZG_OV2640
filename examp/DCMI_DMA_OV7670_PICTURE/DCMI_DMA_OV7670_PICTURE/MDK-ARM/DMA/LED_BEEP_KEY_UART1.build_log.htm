@@ -1,0 +1,250 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=R4HHL-0II8L-WIJ5K-ZVIJ3-Q16VX-6PPU6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.25.2.0
+Toolchain Path:  D:\competitive application\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+E:\STM32\EXAMPLE\LED_BEEP_KEY_UART1\MDK-ARM\LED_BEEP_KEY_UART1.uvprojx
+Project File Date:  01/01/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\competitive application\Keil\ARM\ARMCC\Bin'
+Build target 'LED_BEEP_KEY_UART1'
+compiling touch.c...
+..\APP\LCD\touch.c(31): warning:  #223-D: function "PFout" declared implicitly
+  		if(num&0x80)TDIN=1;  
+..\APP\LCD\touch.c(31): error:  #137: expression must be a modifiable lvalue
+  		if(num&0x80)TDIN=1;  
+..\APP\LCD\touch.c(32): warning:  #223-D: function "PFout" declared implicitly
+  		else TDIN=0;   
+..\APP\LCD\touch.c(32): error:  #137: expression must be a modifiable lvalue
+  		else TDIN=0;   
+..\APP\LCD\touch.c(34): warning:  #223-D: function "PBout" declared implicitly
+  		TCLK=0; 
+..\APP\LCD\touch.c(34): error:  #137: expression must be a modifiable lvalue
+  		TCLK=0; 
+..\APP\LCD\touch.c(36): error:  #137: expression must be a modifiable lvalue
+  		TCLK=1;		//上升沿有效	        
+..\APP\LCD\touch.c(48): warning:  #223-D: function "PBout" declared implicitly
+  	TCLK=0;		//先拉低时钟 	 
+..\APP\LCD\touch.c(48): error:  #137: expression must be a modifiable lvalue
+  	TCLK=0;		//先拉低时钟 	 
+..\APP\LCD\touch.c(49): warning:  #223-D: function "PFout" declared implicitly
+  	TDIN=0; 	//拉低数据线
+..\APP\LCD\touch.c(49): error:  #137: expression must be a modifiable lvalue
+  	TDIN=0; 	//拉低数据线
+..\APP\LCD\touch.c(50): warning:  #223-D: function "PCout" declared implicitly
+  	TCS=0; 		//选中触摸屏IC
+..\APP\LCD\touch.c(50): error:  #137: expression must be a modifiable lvalue
+  	TCS=0; 		//选中触摸屏IC
+..\APP\LCD\touch.c(53): error:  #137: expression must be a modifiable lvalue
+  	TCLK=0; 	     	    
+..\APP\LCD\touch.c(55): error:  #137: expression must be a modifiable lvalue
+  	TCLK=1;		//给1个时钟，清除BUSY
+..\APP\LCD\touch.c(57): error:  #137: expression must be a modifiable lvalue
+  	TCLK=0; 	     	    
+..\APP\LCD\touch.c(61): error:  #137: expression must be a modifiable lvalue
+  		TCLK=0;	//下降沿有效  	    	   
+..\APP\LCD\touch.c(63): error:  #137: expression must be a modifiable lvalue
+   		TCLK=1;
+..\APP\LCD\touch.c(64): warning:  #223-D: function "PBin" declared implicitly
+   		if(DOUT)Num++; 		 
+..\APP\LCD\touch.c(67): error:  #137: expression must be a modifiable lvalue
+  	TCS=1;		//释放片选	 
+..\APP\LCD\touch.c(80): warning:  #223-D: function "PCout" declared implicitly
+          TCS=0;
+..\APP\LCD\touch.c(80): error:  #137: expression must be a modifiable lvalue
+          TCS=0;
+..\APP\LCD\touch.c(85): error:  #137: expression must be a modifiable lvalue
+          TCS=1;
+..\APP\LCD\touch.c(171): warning:  #223-D: function "LCD_DrowSign" declared implicitly
+      LCD_DrowSign(x, y, RED);
+..\APP\LCD\touch.c(171): error:  #20: identifier "RED" is undefined
+      LCD_DrowSign(x, y, RED);
+..\APP\LCD\touch.c(10): warning:  #177-D: variable "TouchAdj"  was declared but never referenced
+  static PosTypeDef TouchAdj;     //定义一阵数据用来保存校正因数
+..\APP\LCD\touch.c: 10 warnings, 16 errors
+compiling gt5663.c...
+..\APP\LCD\gt5663.c(63): warning:  #223-D: function "CT_IIC_Start" declared implicitly
+  	CT_IIC_Start();	
+..\APP\LCD\gt5663.c(64): warning:  #223-D: function "CT_IIC_Send_Byte" declared implicitly
+   	CT_IIC_Send_Byte(GT_CMD_WR);   	//发送写命令 	 
+..\APP\LCD\gt5663.c(65): warning:  #223-D: function "CT_IIC_Wait_Ack" declared implicitly
+  	CT_IIC_Wait_Ack();
+..\APP\LCD\gt5663.c(76): warning:  #223-D: function "CT_IIC_Stop" declared implicitly
+      CT_IIC_Stop();					//产生一个停止条件	    
+..\APP\LCD\gt5663.c(87): warning:  #223-D: function "CT_IIC_Start" declared implicitly
+   	CT_IIC_Start();	
+..\APP\LCD\gt5663.c(88): warning:  #223-D: function "CT_IIC_Send_Byte" declared implicitly
+   	CT_IIC_Send_Byte(GT_CMD_WR);   //发送写命令 	 
+..\APP\LCD\gt5663.c(89): warning:  #223-D: function "CT_IIC_Wait_Ack" declared implicitly
+  	CT_IIC_Wait_Ack();
+..\APP\LCD\gt5663.c(99): warning:  #223-D: function "CT_IIC_Read_Byte" declared implicitly
+      	buf[i]=CT_IIC_Read_Byte(i==(len-1)?0:1); //发数据	  
+..\APP\LCD\gt5663.c(101): warning:  #223-D: function "CT_IIC_Stop" declared implicitly
+      CT_IIC_Stop();//产生一个停止条件    
+..\APP\LCD\gt5663.c(111): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB|RCC_AHB1Periph_GPIOC, ENABLE);//使能GPIOB,C时钟
+..\APP\LCD\gt5663.c(111): error:  #20: identifier "RCC_AHB1Periph_GPIOB" is undefined
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB|RCC_AHB1Periph_GPIOC, ENABLE);//使能GPIOB,C时钟
+..\APP\LCD\gt5663.c(111): error:  #20: identifier "RCC_AHB1Periph_GPIOC" is undefined
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB|RCC_AHB1Periph_GPIOC, ENABLE);//使能GPIOB,C时钟
+..\APP\LCD\gt5663.c(113): error:  #136: struct "<unnamed>"  has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 ;//PB1设置为上拉输入
+..\APP\LCD\gt5663.c(113): error:  #20: identifier "GPIO_Pin_1" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 ;//PB1设置为上拉输入
+..\APP\LCD\gt5663.c(114): error:  #136: struct "<unnamed>"  has no field "GPIO_Mode"
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;//输入模式
+..\APP\LCD\gt5663.c(114): error:  #20: identifier "GPIO_Mode_IN" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;//输入模式
+..\APP\LCD\gt5663.c(115): error:  #136: struct "<unnamed>"  has no field "GPIO_OType"
+  	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
+..\APP\LCD\gt5663.c(115): error:  #20: identifier "GPIO_OType_PP" is undefined
+  	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
+..\APP\LCD\gt5663.c(116): error:  #136: struct "<unnamed>"  has no field "GPIO_Speed"
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
+..\APP\LCD\gt5663.c(116): error:  #20: identifier "GPIO_Speed_100MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
+..\APP\LCD\gt5663.c(117): error:  #136: struct "<unnamed>"  has no field "GPIO_PuPd"
+  	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
+..\APP\LCD\gt5663.c(117): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+  	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
+..\APP\LCD\gt5663.c(118): warning:  #223-D: function "GPIO_Init" declared implicitly
+  	GPIO_Init(GPIOB, &GPIO_InitStructure);//初始化
+..\APP\LCD\gt5663.c(120): error:  #136: struct "<unnamed>"  has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;//PC13设置为推挽输出
+..\APP\LCD\gt5663.c(120): error:  #20: identifier "GPIO_Pin_13" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;//PC13设置为推挽输出
+..\APP\LCD\gt5663.c(121): error:  #136: struct "<unnamed>"  has no field "GPIO_Mode"
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//输出模式
+..\APP\LCD\gt5663.c(121): error:  #20: identifier "GPIO_Mode_OUT" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//输出模式
+..\APP\LCD\gt5663.c(124): warning:  #223-D: function "CT_IIC_Init" declared implicitly
+  	CT_IIC_Init();      	//初始化电容屏的I2C总线  
+..\APP\LCD\gt5663.c(125): warning:  #223-D: function "PCout" declared implicitly
+  	GT_RST=0;				//复位
+..\APP\LCD\gt5663.c(125): error:  #137: expression must be a modifiable lvalue
+  	GT_RST=0;				//复位
+..\APP\LCD\gt5663.c(127): error:  #137: expression must be a modifiable lvalue
+   	GT_RST=1;				//释放复位		    
+..\APP\LCD\gt5663.c(130): error:  #136: struct "<unnamed>"  has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;//PB1设置为浮空输入
+..\APP\LCD\gt5663.c(131): error:  #136: struct "<unnamed>"  has no field "GPIO_Mode"
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//输出模式
+..\APP\LCD\gt5663.c(132): error:  #136: struct "<unnamed>"  has no field "GPIO_PuPd"
+  	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+..\APP\LCD\gt5663.c(132): error:  #20: identifier "GPIO_PuPd_NOPULL" is undefined
+  	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+..\APP\LCD\gt5663.c(138): warning:  #223-D: function "printf" declared implicitly
+  	printf("CTP ID:%s\r\n",temp);	//打印ID
+..\APP\LCD\gt5663.c(168): warning:  #177-D: variable "tp_sta"  was declared but never referenced
+  	u8 tp_sta;
+..\APP\LCD\gt5663.c: 15 warnings, 22 errors
+compiling board.c...
+compiling I2C_S.c...
+..\APP\I2C_S.c(15): error:  #20: identifier "I2C1_SCL_Pin" is undefined
+  	GPIO_InitStructure.Pin = I2C1_SCL_Pin|I2C1_SDA_Pin;
+..\APP\I2C_S.c(15): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	GPIO_InitStructure.Pin = I2C1_SCL_Pin|I2C1_SDA_Pin;
+..\APP\I2C_S.c(20): error:  #20: identifier "I2C1_SCL_GPIO_Port" is undefined
+  	IIC_SCL_1;
+..\APP\I2C_S.c(21): error:  #20: identifier "I2C1_SDA_GPIO_Port" is undefined
+  	IIC_SDA_1;	
+..\APP\I2C_S.c(35): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	GPIO_InitStructure.Pin =I2C1_SDA_Pin;
+..\APP\I2C_S.c(53): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	GPIO_InitStructure.Pin =I2C1_SDA_Pin;
+..\APP\I2C_S.c(68): error:  #20: identifier "I2C1_SDA_GPIO_Port" is undefined
+  	IIC_SDA_1;	  	  
+..\APP\I2C_S.c(68): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	IIC_SDA_1;	  	  
+..\APP\I2C_S.c(69): error:  #20: identifier "I2C1_SCL_GPIO_Port" is undefined
+  	IIC_SCL_1;
+..\APP\I2C_S.c(69): error:  #20: identifier "I2C1_SCL_Pin" is undefined
+  	IIC_SCL_1;
+..\APP\I2C_S.c(85): error:  #20: identifier "I2C1_SCL_GPIO_Port" is undefined
+  	IIC_SCL_0;
+..\APP\I2C_S.c(85): error:  #20: identifier "I2C1_SCL_Pin" is undefined
+  	IIC_SCL_0;
+..\APP\I2C_S.c(86): error:  #20: identifier "I2C1_SDA_GPIO_Port" is undefined
+  	IIC_SDA_0;//STOP:when CLK is high DATA change form low to high
+..\APP\I2C_S.c(86): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	IIC_SDA_0;//STOP:when CLK is high DATA change form low to high
+..\APP\I2C_S.c(103): error:  #20: identifier "I2C1_SDA_GPIO_Port" is undefined
+  	IIC_SDA_1;
+..\APP\I2C_S.c(103): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	IIC_SDA_1;
+..\APP\I2C_S.c(105): error:  #20: identifier "I2C1_SCL_GPIO_Port" is undefined
+  	IIC_SCL_1;
+..\APP\I2C_S.c(105): error:  #20: identifier "I2C1_SCL_Pin" is undefined
+  	IIC_SCL_1;
+..\APP\I2C_S.c(129): error:  #20: identifier "I2C1_SCL_GPIO_Port" is undefined
+  	IIC_SCL_0;
+..\APP\I2C_S.c(129): error:  #20: identifier "I2C1_SCL_Pin" is undefined
+  	IIC_SCL_0;
+..\APP\I2C_S.c(131): error:  #20: identifier "I2C1_SDA_GPIO_Port" is undefined
+  	IIC_SDA_0;
+..\APP\I2C_S.c(131): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	IIC_SDA_0;
+..\APP\I2C_S.c(146): error:  #20: identifier "I2C1_SCL_GPIO_Port" is undefined
+  	IIC_SCL_0;
+..\APP\I2C_S.c(146): error:  #20: identifier "I2C1_SCL_Pin" is undefined
+  	IIC_SCL_0;
+..\APP\I2C_S.c(148): error:  #20: identifier "I2C1_SDA_GPIO_Port" is undefined
+  	IIC_SDA_1;
+..\APP\I2C_S.c(148): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  	IIC_SDA_1;
+..\APP\I2C_S.c(165): error:  #20: identifier "I2C1_SCL_GPIO_Port" is undefined
+      IIC_SCL_0;//拉低时钟开始数据传输
+..\APP\I2C_S.c(165): error:  #20: identifier "I2C1_SCL_Pin" is undefined
+      IIC_SCL_0;//拉低时钟开始数据传输
+..\APP\I2C_S.c(169): error:  #20: identifier "I2C1_SDA_GPIO_Port" is undefined
+  			IIC_SDA_1;
+..\APP\I2C_S.c(169): error:  #20: identifier "I2C1_SDA_Pin" is undefined
+  			IIC_SDA_1;
+..\APP\I2C_S.c: 0 warnings, 30 errors
+"LED_BEEP_KEY_UART1\LED_BEEP_KEY_UART1.axf" - 68 Error(s), 25 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.11.0.pack
+                Keil.STM32F4xx_DFP.2.11.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_LED_BEEP_KEY_UART1
+  D:\competitive application\Keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  D:\competitive application\Keil\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Target not created.
+Build Time Elapsed:  00:00:24
+</pre>
+</body>
+</html>

@@ -40,7 +40,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x60CCB9C8)
 I (../Core/Inc/tim.h)(0x60CCFCE3)
 I (../Core/Inc/ov2640cfg.h)(0x60CCFA19)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (../Core/Src/main.c)(0x60CEFC64)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include-I D:\SchoolLesson\03_CODE_DATA\STM32\STM32F407ZG\07_STM32F407ZG_OV2640\OV2640\MDK-ARM\RTE-I C:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-I C:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ov2640\main.o --omf_browse ov2640\main.crf --depend ov2640\main.d)
+F (../Core/Src/main.c)(0x60D01D3E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include-I D:\SchoolLesson\03_CODE_DATA\STM32\STM32F407ZG\07_STM32F407ZG_OV2640\OV2640\MDK-ARM\RTE-I C:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-I C:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ov2640\main.o --omf_browse ov2640\main.crf --depend ov2640\main.d)
 I (../Core/Inc/main.h)(0x60CCFCE5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x60CCB9C8)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60CCFCE5)
@@ -76,7 +76,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x60CCB9C8)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x60CCB9C8)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x60CCB9C8)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x60CCB9C8)
-I (../Core/Inc/dcmi.h)(0x60CEFBBA)
+I (../Core/Inc/dcmi.h)(0x60CF0826)
 I (../Core/Inc/ILI93xx.h)(0x60CD03A1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
@@ -124,7 +124,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x60CCB9C8)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x60CCB9C8)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x60CCB9C8)
 F (../Core/Src/dcmi.c)(0x60CEFB67)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include-I D:\SchoolLesson\03_CODE_DATA\STM32\STM32F407ZG\07_STM32F407ZG_OV2640\OV2640\MDK-ARM\RTE-I C:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-I C:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ov2640\dcmi.o --omf_browse ov2640\dcmi.crf --depend ov2640\dcmi.d)
-I (../Core/Inc/dcmi.h)(0x60CEFBBA)
+I (../Core/Inc/dcmi.h)(0x60CF0826)
 I (../Core/Inc/main.h)(0x60CCFCE5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x60CCB9C8)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x60CCFCE5)
